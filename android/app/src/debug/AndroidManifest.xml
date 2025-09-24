@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.truawake">
+
+    <!-- 🌐 Internet (for APIs, Firebase, Maps, etc.) -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 🛑 Camera (for drowsiness detection using face/eye tracking) -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- 🎤 Microphone (agar sound-based alerts detect/record karna ho) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- 📍 Location (for OpenStreetMap navigation & tracking) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- ⏰ WakeLock (for alarms/notifications while app is running in background) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- 🔔 Notifications -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:label="TruAwake"
+        android:icon="@mipmap/ic_launcher">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

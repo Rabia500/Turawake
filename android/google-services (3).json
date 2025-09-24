@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "901869801160",
+    "project_id": "truawake-fc914",
+    "storage_bucket": "truawake-fc914.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901869801160:android:d6ed125b31730bc2a45ffd",
+        "android_client_info": {
+          "package_name": "com.example.fyp_truawake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901869801160-u33tn9qv2u17i7rettkscmto4vmfiu6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJak924sfD5bzi4GZW-rWCEtI9CAm0n34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901869801160-u33tn9qv2u17i7rettkscmto4vmfiu6v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "901869801160-ti2u5ndap82hmfgtitarfac58un5rvi3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fypTruawake"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
